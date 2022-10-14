@@ -52,8 +52,6 @@ const reducer = (state, action) => {
       //Switch current player to opposition
       let name = player === "human" ? "computer" : "player";
 
-      console.log(player);
-
       const getPlayerShips = state.players[name].ships;
       const index = getPlayerShips
         .map((ship) => ship.name)
